@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Актёры</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Актёры</h1>
+
+      <form id="actor-form">
+        <input type="text" id="first-name" placeholder="Имя" required />
+        <input type="text" id="last-name" placeholder="Фамилия" required />
+        <input
+          type="url"
+          id="profile-picture"
+          placeholder="URL к изображению"
+          required
+        />
+        <input type="url" id="social1" placeholder="Соц.сеть 1" required />
+        <input type="url" id="social2" placeholder="Соц.сеть 2" required />
+        <button type="submit">Добавить актёра</button>
+      </form>
+
+      <div id="actor-cards" class="cards"></div>
+
+      <h2>Вы выбрали</h2>
+      <select id="sort-options">
+        <option value="alphabetical">По алфавиту</option>
+        <option value="reverse">В обратном порядке</option>
+      </select>
+      <ul id="chosen-list"></ul>
+    </div>
+
+    <script src="home.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
